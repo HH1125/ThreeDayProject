@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.mldn</groupId>
-	<artifactId>mldnspring</artifactId>
+	<artifactId>ThreeDayProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>mldnspring</name>
+	<name>ThreeDayProject</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -78,7 +78,7 @@
 		
 			<dependency>
 				<groupId>cn.mldn</groupId>
-				<artifactId>mldnspring-ws-api</artifactId>
+				<artifactId>ThreeDayProject-ws-api</artifactId>
 				<version>${mldnspring.version}</version>
 			</dependency>
 		
@@ -177,7 +177,7 @@
 		</dependencies>
 	</dependencyManagement>
 	<build>
-		<finalName>mldnspring</finalName>
+		<finalName>ThreeDayProject</finalName>
 		<resources>
 			<resource>
 				<!-- 此处的属性是profile中统一定义的路径的名称，不同的配置文件有不同的子目录 -->
@@ -219,17 +219,10 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>mldnspring-ioc</module>
-		<module>mldnspring-di</module>
-		<module>mldnspring-context</module>
-		<module>mldnspring-resource</module>
-		<module>mldnspring-spel</module>
-		<module>mldnspring-schedule</module>
-		<module>mldnspring-aop</module>
-		<module>mldnspring-jdbc</module>
-		<module>mldnspring-transaction</module>
-		<module>mldnspring-ws-server</module>
-		<module>mldnspring-ws-client</module>
-		<module>mldnspring-ws-api</module>
+		<module>ThreeDayProject-jdbc</module>
+		<module>ThreeDayProject-transaction</module>
+		<module>ThreeDayProject-ws-server</module>
+		<module>ThreeDayProject-ws-client</module>
+		<module>ThreeDayProject-ws-api</module>
 	</modules>
 </project>
